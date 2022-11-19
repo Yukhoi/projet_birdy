@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "8e1173f1-dee5-4b86-9b36-19388df536f4",
+		"name": "Birdy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"LUO_ZHANG\",\r\n    \"email\":\"Luo_Zhang@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"huhuhuhu@lkl.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"6277917ee3e0076cef939f25\",\r\n    \"profilePicture\": \"vh.jpg\",\r\n    \"username\": \"enzo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/users/6277917ee3e0076cef939f25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						"6277917ee3e0076cef939f25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"6277917ee3e0076cef939f25\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"62778df6ae68d6624fccbf35\" ,\r\n    \"desc\": \"yeah\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletepost",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"6270621afa1c40893ce89b54\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/users/6270621afa1c40893ce89b54",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						"6270621afa1c40893ce89b54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "likepost",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"6270621afa1c40893ce89b54\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/posts/62751a83b973628280626005/like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"posts",
+						"62751a83b973628280626005",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "followUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"62778df6ae68d6624fccbf35\" \r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/users/62713298d4698097b0d6724b/follow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						"62713298d4698097b0d6724b",
+						"follow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gettimeline",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8800/api/posts/timeline/6277917ee3e0076cef939f25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"posts",
+						"timeline",
+						"6277917ee3e0076cef939f25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uploadfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "wLM6YFEMy/微信图片_20211124150132.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteuser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"62705ff0fa1c40893ce89b52\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/users/62705ff0fa1c40893ce89b52",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						"62705ff0fa1c40893ce89b52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unfollowuser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"6270621afa1c40893ce89b54\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/users/62713298d4698097b0d6724b/unfollow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						"62713298d4698097b0d6724b",
+						"unfollow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getuserAllPost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8800/api/posts/profile/enzo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"posts",
+						"profile",
+						"enzo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
