@@ -1,0 +1,41 @@
+.rightbar{
+    flex: 3;
+}
+
+.rightbarTittle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rightbarInfo{
+    margin-bottom: 30px;
+}
+
+.rightbarInfoItem{
+    margin-bottom: 30px;
+}
+
+.rightbarInfoKey{
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.rightbarInfoValue{
+    font-weight: 300;
+}
+
+.rightbarfollowButton{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(225, 239, 250);
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.rightbarfollowButton:focus{
+    outline: none;
+}
